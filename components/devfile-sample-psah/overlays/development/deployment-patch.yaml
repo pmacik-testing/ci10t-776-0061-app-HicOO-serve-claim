@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-psah
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0061-tenant/ci10t-776-0061-app/devfile-sample-psah@sha256:e6c4c4fceb4dc27b6c9abca0765ab32f29ffaba2b2aa991277594cb5ac7a2eba
+        name: my-nodejs
+        resources: {}
+status: {}
